@@ -1132,6 +1132,91 @@ footer .copyright {
     padding: 10px;
     font-size: 13px;
 }
+/* Login Container */
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+#login .login-container {
+    background-color: gray;
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Header */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: rgb(76, 148, 4);
+    outline: none;
+}
+
+/* Login Button */
+#login .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(76, 148, 4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#login .links p {
+    color: black;
+}
+
+#login .btn-login:hover {
+    background-color: rgb(3, 56, 3);
+}
+
+/* Links */
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    color: white;
+    text-decoration: underline;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
 
 
 
@@ -1198,6 +1283,9 @@ footer .copyright {
     }
     #lg-bag {
         display: none;
+    }
+    #mobile i:hover {
+        color: rgb(76, 148, 4);
     }
     #hero {
         height: 70vh;
@@ -1266,6 +1354,9 @@ footer .copyright {
 @media (max-width: 477px) {
     .section-p1 {
         padding: 20px;
+    }
+    #mobile i:hover {
+        color: rgb(76, 148, 4);
     }
     h2 {
         font-size: 32px;
