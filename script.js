@@ -12,3 +12,14 @@ if (close) {
         nav.classList.remove('active');  // 
     });
 }
+// Example of fetching products
+async function getProducts() {
+    try {
+        const response = await fetch('http://localhost:5000/api/products');
+        const data = await response.json();
+        // Handle the data here
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
